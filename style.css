@@ -1,1 +1,13 @@
+window.onload = function () {
+  alert("🚀 Welcome to Meme Trader – Trade Smart! Official launch: June 25. Education starts July 1.");
+};
 
+function copyAddress() {
+  const contract = "0xABCDEF1234567890ABCDEF1234567890ABCDEF12"; // استبدله بعقد MTD الحقيقي
+  navigator.clipboard.writeText(contract).then(() => {
+    document.getElementById("copied").classList.remove("hidden");
+    setTimeout(() => {
+      document.getElementById("copied").classList.add("hidden");
+    }, 3000);
+  });
+      }
