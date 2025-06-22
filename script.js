@@ -1,5 +1,5 @@
 function copyAddress() {
-  const contract = "0xABCDEF1234567890ABCDEF1234567890ABCDEF12"; // Replace with real contract address
+  const contract = "0xABCDEF1234567890ABCDEF1234567890ABCDEF12"; // استبدل بالعنوان الحقيقي
   navigator.clipboard.writeText(contract).then(() => {
     document.getElementById("copied").classList.remove("hidden");
     setTimeout(() => {
