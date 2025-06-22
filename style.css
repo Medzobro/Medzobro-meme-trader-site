@@ -1,13 +1,80 @@
-window.onload = function () {
-  alert("🚀 Welcome to Meme Trader – Trade Smart! Official launch: June 25. Education starts July 1.");
-};
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #0e0f11;
+  color: #e5e7eb;
+  line-height: 1.6;
+  padding: 0;
+}
 
-function copyAddress() {
-  const contract = "0xABCDEF1234567890ABCDEF1234567890ABCDEF12"; // استبدله بعقد MTD الحقيقي
-  navigator.clipboard.writeText(contract).then(() => {
-    document.getElementById("copied").classList.remove("hidden");
-    setTimeout(() => {
-      document.getElementById("copied").classList.add("hidden");
-    }, 3000);
-  });
-      }
+header {
+  background: #111827;
+  padding: 2rem 1rem;
+  text-align: center;
+  border-bottom: 2px solid #1f2937;
+}
+header h1 {
+  color: #60a5fa;
+  font-size: 2.5rem;
+  margin-bottom: 0.3rem;
+}
+header p {
+  color: #9ca3af;
+  font-size: 1rem;
+}
+.alert {
+  margin-top: 1rem;
+  background: #fef3c7;
+  color: #78350f;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.section {
+  background-color: #1f2937;
+  padding: 1.5rem;
+  margin: 1.5rem;
+  border-radius: 1rem;
+  border: 1px solid #374151;
+}
+.section h2 {
+  color: #93c5fd;
+  margin-bottom: 0.5rem;
+}
+.section ul {
+  padding-left: 1.2rem;
+}
+
+button {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  margin: 8px 6px 0;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+button:hover {
+  background-color: #1e40af;
+}
+.buttons {
+  margin-top: 1rem;
+}
+#copied {
+  color: #10b981;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+.hidden {
+  display: none;
+}
+footer {
+  background-color: #111827;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.85rem;
+  color: #6b7280;
+  border-top: 1px solid #1f2937;
+}
