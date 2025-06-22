@@ -1,80 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Meme Trader (MTD)</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
-  <div class="stars-bg"></div>
-
-  <nav class="navbar">
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#whitepaper">Whitepaper</a></li>
-      <li><a href="#roadmap">Roadmap</a></li>
-      <li><a href="#lessons">Lessons</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-
-  <header id="home">
-    <h1>🚀 Meme Trader (MTD)</h1>
-    <p>Smarter Meme Coin Trading Starts Here</p>
-    <div class="alert">
-      🌌 <strong>Welcome to the Meme Trader beta!</strong><br />
-      You're exploring a preview of our future-ready platform.<br />
-      🎓 <strong>Full educational journey begins July 1, 2025</strong><br />
-      with interactive lessons, videos, quizzes, and more.
-    </div>
-  </header>
-
-  <main>
-    <section class="section" id="whitepaper">
-      <h2>📘 Whitepaper</h2>
-      <p>Meme Trader is more than hype. It’s a smart educational initiative to help traders understand meme coins beyond speculation.</p>
-      <p><strong>Why it matters:</strong> Many lose money on meme coins due to poor entry points, scams, or emotional trades.</p>
-      <p><strong>Our mission:</strong> Empower users with clear strategies, tools, and risk management knowledge through simple, digestible content.</p>
-    </section>
-
-    <section class="section" id="roadmap">
-      <h2>📅 Roadmap</h2>
-      <ul>
-        <li>✅ June 25, 2025: Website & whitepaper launch</li>
-        <li>🎓 July 1, 2025: Start of the educational program (lessons, videos)</li>
-        <li>📢 August 2025: Marketing expansion, quizzes & live events</li>
-        <li>🚀 Q4 2025: Launch demo tokens & rewards for top learners</li>
-      </ul>
-    </section>
-
-    <section class="section" id="lessons">
-      <h2>🎓 Educational Lessons</h2>
-      <p>Starting July 1, we'll publish step-by-step lessons:</p>
-      <ul>
-        <li>📖 Lesson 1: What Are Meme Coins?</li>
-        <li>📖 Lesson 2: How to Spot a Pump & Exit Smart</li>
-        <li>📖 Lesson 3: Tools You Must Use (DEX, Trackers, Alerts)</li>
-        <li>📖 Lesson 4: Trading Psychology & FOMO Control</li>
-      </ul>
-    </section>
-
-    <section class="section" id="contact">
-      <h2>💬 Join the Community</h2>
-      <div class="buttons">
-        <button onclick="window.open('https://t.me/+22OwtVG2OaY1YjM0', '_blank')">📲 Telegram</button>
-        <button onclick="window.open('https://x.com/MTD_Coin?t=LGE3uksH_DErYeNE_523yg&s=09', '_blank')">🔗 Follow on X</button>
-        <button onclick="copyAddress()">🔐 Copy Contract</button>
-        <p id="copied" class="hidden">✅ Copied!</p>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 Meme Trader (MTD) – Learn, Trade, Evolve</p>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
-</html>
+function copyAddress() {
+  const contract = "0x616A1de200d49e210de940F91FB636f67b75d656";
+  navigator.clipboard.writeText(contract).then(() => {
+    const copiedMsg = document.getElementById("copied");
+    copiedMsg.classList.remove("hidden");
+    setTimeout(() => {
+      copiedMsg.classList.add("hidden");
+    }, 3000);
+  });
+}
